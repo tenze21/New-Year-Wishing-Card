@@ -8,7 +8,7 @@ This repository contains the webpage I have designed to wish my friends on new y
 
  ## screenshots
  ## Links
- The Live site is available on:
+ The Live site is available on: https://tenze21.github.io/New-Year-Wishing-Card/
 
  ## Credits
  The background image was generated with leonardo AI (check it out on: https://leonardo.ai/).
