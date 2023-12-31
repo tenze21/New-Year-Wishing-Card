@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500&display=swap');
+    :root {
+        --heading-font: 'Great Vibes', cursive;
+        --body-font: 'Work Sans', sans-serif;
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       background: linear-gradient(to bottom, #1a1a2e, #31314a, #51536d, #777799, #a7a7cc); 
+       /* background: linear-gradient(to bottom, #ff7e5f, #feb47b, #ffd09a, #ffa184, #ff6f68); */
+    }
+    .container{
+        width: 390px;
+        height: 400px;
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 5px 5px 0px #000;
+    }
+    .overlay{
+        position: absolute;
+        background-color: #000;
+        opacity: 0.35;
+        width: 390px;
+        height: 400px;
+        top: 0;
+        left: 0; 
+        border-radius: 8px;
+    }
+    h1{
+        font-family: var(--heading-font);
+        font-size: 26px;
+        font-weight: 400;
+        position: absolute;
+        top: 120px;
+        color: #FFD700;
+        animation: colorChange 6s infinite;
+    }
+    p{
+        font-family: var(--body-font);
+        font-weight: 500;
+        width: 390px;
+        text-align: start;
+        left: 3px;
+        position: absolute;
+        top: 200px;
+        color: #F5F5F5;
+        font-size: 14px;
+        line-height: 1.225rem;
+        word-spacing: 0.06rem;
+    }
+    span{
+        animation: changeColor 5s infinite;
+    }
+    @keyframes changeColor {
+        0% {
+            color: #fff;
+        }
+        50%{
+            color: blue;
+        }
+        100%{
+            color: green;
+        }
+    }
+    @keyframes colorChange{
+        0%{
+            color: #FFD700;
+        }
+        50%{
+            color: #46C0B7;
+        }
+        100%{
+            color: orange;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <h1>HAPPY NEW YEAR!!!</h1>
+        <p>Wishing you a glorious <span>2024</span> as the first rays of the new year fall upon you. May <span>2024</span>  bring you lots of love, laughter and unforgettable moments. May each day be a new chapter of joy, and every challenge an opportunity for growth.</p>
+    </div>
+</body>
+</html>
